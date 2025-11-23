@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Optimize bookmarks export file</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- import the webpage's javascript file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Hi there!</h1>
+
+    <p>
+      Sometime bookmarks export HTML file can be too big to import somewhere,
+      especially to <a href="https://raindrop.io/">Raindrop.io</a>
+    </p>
+
+    <p>
+      This usually means that file contains unnecessary data that not useful at
+      all, this includes:
+    </p>
+    <ul>
+      <li>Favicon: entire .ico file for each bookmark</li>
+    </ul>
+
+    <p>
+      Just upload import file here and after a moment you will get much smaller
+      optimized lossless file
+    </p>
+
+    <input type="file" id="upload" />
+  </body>
+</html>
